@@ -10,9 +10,8 @@ except ImportError:
     print("WARNING: Coqui 'TTS' library is not installed. Voice conversion is powered by this deep learning library.")
     print("Please install via: pip install TTS")
 
-# Directories
-INPUT_SOURCE_DIR = "synthetic_speech"  # Our clean synthetic speech
-REFERENCE_WAV = "dysarthric_reference.wav" # Provide a real dysarthric sample here!
+INPUT_SOURCE_DIR = "synthetic_speech" 
+REFERENCE_WAV = "dysarthric_reference.wav" 
 OUTPUT_DIR = "gan_converted_speech"
 
 def run_voice_conversion():
